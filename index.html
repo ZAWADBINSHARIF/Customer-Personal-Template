@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- **************************************
+ ************ Developed by ZAWAD SHARIF ************
+ ************ zawadsharif.blogspot.com
+ ************************************** -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- =================================== CSS file ============================= -->
+
+    <style>
+      @font-face {
+        font-family: Myriad_pro_Regular;
+        src: url(/font/Myriad\ Pro\ Regular.ttf) format("ttf");
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Myriad_pro_Regular;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 805px;
+        height: 450px;
+        background-color: white;
+        padding: 0;
+      }
+
+      .logo {
+        padding: 0px 83px 43px 612px;
+      }
+
+      .mid_info {
+        min-height: 180px;
+        width: auto;
+        background-color: #27343f;
+        color: white;
+      }
+
+      .photo_div {
+        width: 265px;
+      }
+
+      .photo_frame {
+        height: 228px;
+        width: 160px;
+        background-color: #2f548d;
+        position: relative;
+        top: -103px;
+        right: -105px;
+      }
+
+      .photo_frame > img {
+        margin: 10px -2px 0;
+      }
+
+      #name {
+        font-size: 1.116rem;
+      }
+
+      #position {
+        font-size: 0.7rem;
+      }
+
+      span {
+        display: inline-block;
+        width: 1px;
+        height: 0.7rem;
+        background-color: white;
+        position: relative;
+        top: 4px;
+      }
+
+      .under_photo_text {
+        text-align: center;
+        padding-bottom: 22px;
+      }
+
+      .mid_line {
+        background-color: #36558d;
+        height: 5px;
+        margin: 18px 0 10px 0;
+      }
+
+      .all_address {
+        width: 635px;
+        overflow: hidden;
+      }
+
+      .address_grid {
+        padding: 24px 0 0 0;
+      }
+
+      .address_grid > .one,
+      .three {
+        padding-left: 50px;
+      }
+
+      .one,
+      .two {
+        font-size: 1rem;
+        line-height: 18px;
+      }
+
+      .three {
+        font-size: 0.9rem;
+        line-height: 16px;
+      }
+
+      .social_icon {
+        width: 60%;
+      }
+
+      .social_media.facebook {
+        width: 11px;
+        height: 25px;
+      }
+      .social_media.instagram {
+        width: 25px;
+        height: 23px;
+      }
+      .social_media.linkedin {
+        width: 23px;
+        height: 22px;
+      }
+      .social_media.pinterest {
+        width: 21px;
+        height: 24px;
+      }
+      .social_media.youtube {
+        width: 32px;
+        height: 20px;
+      }
+
+      .footer {
+        padding-left: 105px;
+        padding-right: 105px;
+        padding-top: 21px;
+        width: 100%;
+      }
+
+      .firstPara,
+      .secondPara {
+        padding-right: 24px;
+        font-size: 0.85rem;
+        line-height: 12px;
+        font-weight: 100;
+        display: block;
+      }
+
+      .secondPara > img {
+        margin-right: 5px;
+      }
+
+      .secondPara {
+        padding-top: 18px;
+      }
+
+      @media (max-width: 800px) {
+        .mid_info {
+          flex-direction: column;
+        }
+        .all_address {
+          padding-bottom: 30px;
+          margin-top: -50px;
+        }
+      }
+
+      @media (max-width: 635px) {
+        .mid_line {
+          background-color: transparent;
+        }
+
+        .one,
+        .two {
+          padding-bottom: 16px;
+        }
+
+        .all_address {
+          width: 100%;
+        }
+        .container {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .photo_frame {
+          top: 0;
+          right: 0;
+        }
+
+        .photo_div {
+          padding-left: 50px;
+        }
+
+        .all_address {
+          margin-top: 50px;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .address_grid {
+          display: flex;
+          flex-direction: column;
+        }
+        .mid_line {
+          display: none;
+        }
+        .two {
+          padding-left: 50px;
+        }
+        .social_icon {
+          padding: 16px 50px;
+        }
+      }
+    </style>
+
+    <!-- ======================= End Css ============================ -->
+
+    <div>
+      <div class="container">
+        <div class="d-flex flex-row-reverse logo">
+          <div class="logo_img" style="float: right">
+            <img
+              src="https://i.postimg.cc/cHQ6PbBF/logo.png"
+              alt="Logo"
+              srcset=""
+            />
+          </div>
+        </div>
+
+        <div class="mid_info d-flex">
+          <div class="photo_div">
+            <div class="photo_frame">
+              <img
+                src="https://i.postimg.cc/6qcqp4SR/photo.png"
+                alt="Photo"
+                srcset=""
+              />
+              <div class="under_photo_text">
+                <p id="name">Benjamin Gibtner</p>
+                <p id="position">
+                  CEO <span></span> Production <span></span>
+                  Markating
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="all_address">
+            <div class="row address_grid">
+              <div class="col one">
+                <p>
+                  SHOWROOM <br />
+                  Walpurgisstraße 7 <br />
+                  81677 München
+                </p>
+              </div>
+              <div class="col two">
+                <p>
+                  Production <br />
+                  Siriusstraße 9 <br />
+                  85614 Eglharting/Kirchseeon
+                </p>
+              </div>
+              <div class="w-100 mid_line"></div>
+              <div class="col three">
+                <p>
+                  Phone: 08106 348 02 86<br />Email: bg@artoui.com<br />Website:
+                  ARTOUI.com
+                </p>
+              </div>
+              <div class="col four d-flex align-items-end">
+                <div class="social_icon d-flex justify-content-between">
+                  <img
+                    class="social_media facebook"
+                    src="https://i.postimg.cc/WzyzQFH7/facebook-f-brands.png"
+                    alt="Facebook"
+                    srcset=""
+                  />
+                  <img
+                    class="social_media instagram"
+                    src="https://i.postimg.cc/0yDjBNdp/instagram-brands.png"
+                    alt="instagram"
+                    srcset=""
+                  />
+                  <img
+                    class="social_media linkedin"
+                    src="https://i.postimg.cc/5NZjgzv4/linkedin-in-brands.png"
+                    alt="linkedin"
+                    srcset=""
+                  />
+                  <img
+                    class="social_media pinterest"
+                    src="https://i.postimg.cc/dt7LG6hN/pinterest-p-brands.png"
+                    alt="pinterest"
+                    srcset=""
+                  />
+                  <img
+                    class="social_media youtube"
+                    src="https://i.postimg.cc/v8241kZ6/youtube-brands.png"
+                    alt="youtube"
+                    srcset=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="firstPara">
+            <p>
+              This message contains confidential information and is intended
+              only for the individual named. If you are not the named addressee
+              you should not disseminate, distribute or copy this email. Please
+              notify the sender immediately by email if you have received this
+              email by mistake and delete this email from your system. If you
+              are not the intended recipient you are notified that disclosing,
+              copying, distributing or taking any action in reliance on the
+              contents of this information is strictly prohibited.
+            </p>
+          </div>
+
+          <div class="secondPara">
+            <img
+              src="https://i.postimg.cc/tJp7bNrp/waring.png"
+              alt=""
+              srcset=""
+            />
+            Save resources: think before you print.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
